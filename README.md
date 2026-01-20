@@ -1,4 +1,4 @@
-# Silasha | Software Engineer Portfolio
+# Silash | Software Engineer Portfolio
 
 Siyah arka planlı, matrix efektli, minimal ve etkileyici tek sayfa kişisel web sitesi.
 
