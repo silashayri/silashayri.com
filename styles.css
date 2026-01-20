@@ -1,0 +1,98 @@
+:root{
+
+
+  .terminal-bg {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .terminal-header {
+    width: 100%;
+    max-width: 600px;
+    background: #18181c;
+    border-radius: 12px 12px 0 0;
+    padding: 24px 32px 8px 32px;
+    box-shadow: 0 2px 12px #000a;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .prompt {
+    color: var(--prompt);
+    font-size: 1.1rem;
+    margin-bottom: 6px;
+  }
+  .user { color: #7fffd4; }
+  .host { color: #e6e6e6; }
+  .title {
+    font-size: 2.1rem;
+    font-weight: bold;
+    color: var(--accent);
+    letter-spacing: 1px;
+  }
+  .terminal-main {
+    width: 100%;
+    max-width: 600px;
+    background: #18181c;
+    border-radius: 0 0 12px 12px;
+    padding: 32px 32px 18px 32px;
+    box-shadow: 0 2px 12px #000a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .code-anim {
+    width: 100%;
+    min-height: 32px;
+    font-size: 1.15rem;
+    color: var(--accent);
+    background: #101014;
+    border-radius: 6px;
+    font-family: 'Fira Mono', 'Consolas', 'Menlo', monospace;
+    margin-bottom: 18px;
+    padding: 8px 12px;
+    box-shadow: 0 1px 8px #0006;
+    letter-spacing: 0.5px;
+  }
+  .identity {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 12px;
+  }
+  .badge {
+    background: var(--badge);
+    color: var(--accent);
+    border-radius: 6px;
+    padding: 6px 14px;
+    font-size: 1rem;
+    font-weight: 500;
+    box-shadow: 0 1px 6px #0004;
+  }
+  .desc {
+    color: var(--text);
+    font-size: 1.08rem;
+    text-align: center;
+    margin-bottom: 18px;
+  }
+  .links {
+    margin-top: 10px;
+    min-height: 32px;
+  }
+  .terminal-footer {
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    color: var(--accent);
+    font-size: 1.05rem;
+    margin-top: 18px;
+    padding-bottom: 12px;
+  }
+  @media (max-width: 700px) {
+    .terminal-header, .terminal-main, .terminal-footer {
+      max-width: 99vw;
+      padding-left: 2vw;
+      padding-right: 2vw;
+    }
+  }
