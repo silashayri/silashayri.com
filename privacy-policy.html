@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  <title>Privacy Policy | Silas Hayri</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>⚔️</text></svg>">
+  <style>
+    :root {
+      --bg: radial-gradient(ellipse at center, #001a00 0%, #000 60%, #000 100%);
+      --panel: rgba(0, 10, 0, 0.72);
+      --stroke: rgba(0, 255, 0, 0.35);
+      --text: #c9ffd0;
+      --muted: #7acd86;
+      --accent: #0f0;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Courier New', 'IBM Plex Mono', ui-monospace, monospace;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      line-height: 1.7;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .grain {
+      position: fixed;
+      inset: 0;
+      background:
+        radial-gradient(circle at 20% 30%, rgba(0, 255, 0, 0.05) 0%, transparent 35%),
+        radial-gradient(circle at 80% 70%, rgba(0, 255, 0, 0.04) 0%, transparent 35%),
+        repeating-linear-gradient(0deg, rgba(0, 255, 0, 0.06) 0px, transparent 1px, transparent 2px, rgba(0, 255, 0, 0.06) 3px);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .page {
+      position: relative;
+      z-index: 1;
+      max-width: 1100px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 48px 22px 72px;
+    }
+
+    header {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      margin-bottom: 26px;
+    }
+
+    .eyebrow {
+      font-size: 0.95rem;
+      letter-spacing: 0.14em;
+      color: var(--muted);
+      text-transform: uppercase;
+    }
+
+    h1 {
+      font-size: clamp(1.9rem, 3vw, 2.6rem);
+      letter-spacing: 0.08em;
+      color: var(--accent);
+      text-shadow: 0 0 12px rgba(0, 255, 0, 0.35);
+    }
+
+    .lede {
+      max-width: 820px;
+      color: var(--text);
+    }
+
+    nav {
+      display: flex;
+      gap: 12px;
+      margin-top: 10px;
+      flex-wrap: wrap;
+    }
+
+    a {
+      color: var(--accent);
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 14px;
+      border: 1px solid var(--stroke);
+      border-radius: 999px;
+      color: var(--text);
+      text-decoration: none;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .pill:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 0 14px rgba(0, 255, 0, 0.2);
+    }
+
+    main {
+      display: grid;
+      gap: 18px;
+    }
+
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--stroke);
+      border-radius: 16px;
+      padding: 20px 22px;
+      box-shadow:
+        0 0 30px rgba(0, 255, 0, 0.08),
+        inset 0 0 35px rgba(0, 255, 0, 0.02);
+    }
+
+    .card h2 {
+      font-size: 1.2rem;
+      color: var(--accent);
+      margin-bottom: 10px;
+      letter-spacing: 0.05em;
+    }
+
+    .card p + p {
+      margin-top: 10px;
+    }
+
+    ul {
+      list-style: none;
+      display: grid;
+      gap: 8px;
+      margin-top: 10px;
+    }
+
+    li {
+      padding: 10px 12px;
+      border: 1px solid rgba(0, 255, 0, 0.18);
+      border-radius: 12px;
+      background: rgba(0, 40, 0, 0.35);
+    }
+
+    .tagline {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-top: 8px;
+    }
+
+    .grid {
+      display: grid;
+      gap: 10px;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      margin-top: 10px;
+    }
+
+    .block {
+      border: 1px solid rgba(0, 255, 0, 0.2);
+      border-radius: 12px;
+      padding: 12px 14px;
+      background: rgba(0, 25, 0, 0.55);
+    }
+
+    .label {
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--muted);
+      font-size: 0.85rem;
+      margin-bottom: 6px;
+    }
+
+    footer {
+      margin-top: 26px;
+      color: var(--muted);
+      font-size: 0.95rem;
+      text-align: left;
+    }
+
+    @media (max-width: 640px) {
+      .page {
+        padding-top: 32px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="page">
+    <header>
+      <p class="eyebrow">Privacy Policy</p>
+      <h1>Privacy &amp; Data Protection Notice</h1>
+      <p class="lede">This page explains what data is collected, how it is used, and your choices. The site is minimalist: no forms, no trackers, and the only personal data I receive is what you voluntarily send by email.</p>
+      <nav>
+        <a class="pill" href="index.html">⟵ Home</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="card">
+        <h2>Data Collection</h2>
+        <p>The following categories may be processed on this site:</p>
+        <div class="grid">
+          <div class="block">
+            <p class="label">Contact Info</p>
+            <p>Optional: Name and email address if you email me directly.</p>
+            <p class="tagline">Not used for tracking or advertising.</p>
+          </div>
+          <div class="block">
+            <p class="label">Usage Data</p>
+            <p>No in-site analytics. The hosting provider (GitHub Pages) may create anonymized server logs for security and reliability.</p>
+          </div>
+          <div class="block">
+            <p class="label">Identifiers / Cookies</p>
+            <p>No cookies, ad IDs, or fingerprinting are set. No cross-app or cross-site tracking.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Purpose of Use</h2>
+        <ul>
+          <li><strong>Support and communication:</strong> Responding to questions you send by email.</li>
+          <li><strong>Security and debugging:</strong> Using minimal server logs to detect abuse and keep the site available.</li>
+          <li><strong>Legal compliance:</strong> Retaining records only when required by applicable law.</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>Data Sharing</h2>
+        <ul>
+          <li><strong>No sale or tracking:</strong> Data is not sold or used for targeted ads.</li>
+          <li><strong>Service providers:</strong> Hosting (GitHub Pages) may technically process data only to deliver the site.</li>
+          <li><strong>Legal requirements:</strong> Data may be disclosed if necessary to comply with lawful requests.</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>Retention</h2>
+        <ul>
+          <li><strong>Email correspondence:</strong> Kept only as long as needed to handle your request, then archived or deleted.</li>
+          <li><strong>Server logs:</strong> Held for a short period for security/debugging and periodically purged.</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>Your Choices &amp; Rights</h2>
+        <ul>
+          <li><strong>Access:</strong> You may request a copy of personal data you shared.</li>
+          <li><strong>Correction or deletion:</strong> You may ask to correct or delete personal data where applicable.</li>
+          <li><strong>Objection/limitation:</strong> You may object to processing or request limitations as permitted by law.</li>
+        </ul>
+        <p class="tagline">Contact me below to exercise these rights.</p>
+      </section>
+
+      <section class="card">
+        <h2>Children’s Privacy</h2>
+        <p>This site is not directed to children under 13 and does not knowingly collect data from them. If such data is identified, it will be deleted.</p>
+      </section>
+
+      <section class="card">
+        <h2>Contact</h2>
+        <p>For privacy questions or requests:</p>
+        <ul>
+          <li><strong>Email:</strong> <a href="mailto:silashayri@gmail.com">silashayri@gmail.com</a></li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <div>This policy may be updated; the date above reflects the latest changes.</div>
+      <div>© 2026 silashayri</div>
+    </footer>
+  </div>
+</body>
+</html>
